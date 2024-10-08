@@ -1,0 +1,121 @@
+
+body{
+    
+    background-color: var(--cream);  
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.container{
+    background-color:rgb(208, 220, 208);
+    border-radius: 20px;
+    display: flex;
+    max-width: 100%;
+    height: px;
+   
+}
+
+img{
+    display: block;
+    border-radius: 0.625rem 0 0 0.625rem;
+    height: 100%;
+}
+
+.my-card{
+    display: flex;
+    border-radius: 0.625rem 0 0 0.625rem;
+    animation: bounce 2s infinite;
+    
+}
+
+.product-price{
+    display: flex;
+}
+
+.product-price .product-new-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-family: fraunces;
+}
+
+.product-price .product-old-price{
+    font-size: .813rem;
+    align-self: center;
+    margin-left: 1rem;
+    text-decoration: line-through;
+}
+
+.paragraph{
+    font-size: 18px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 1;
+    font-family: fraunces;
+}
+
+h1{
+    font-family: Fraunces;
+    font-style: bold;
+}
+
+h3{
+    font-weight: 100;
+    color: hsl(226, 10%, 34%);
+    letter-spacing: 5px;
+    font-family: fraunces;
+}
+
+a {
+    background-color: hsl(158, 36%, 37%);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+    }
+
+a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgba(35, 2, 88, 0.521);
+    transform: scale(1.05);
+}
+
+.title{
+    padding: 10px;
+    margin: 10px;
+}
+
+@media (max-width: 44em){
+
+    body{
+        background-color: var(--cream);
+        align-items: start;
+        margin-top: 1.75rem;
+    }
+
+    .my-card{
+        flex-direction: column;
+        width: 343px;
+    }
+
+    img{
+        border-radius: 0.625rem 0.625rem 0 0;
+    }
+
+    .title{
+        background-color: var(white);
+        border-radius: 0 0 0.625rem;
+    }
+}
+
+
+
